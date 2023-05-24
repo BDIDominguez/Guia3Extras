@@ -31,6 +31,9 @@ public class Guia3Extra {
                     + " 5 --- Regar el Jardin \n"
                     + " S --- Salir \n");
             vResp = JOptionPane.showInputDialog("Que Opcion Elije, con el S sales");
+            if (vResp == null){
+                vResp = "S";
+            }
             switch (vResp) {
                 case "1":
                     Posicion posicion = new Posicion(0, 0);
